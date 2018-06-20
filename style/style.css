@@ -95,20 +95,18 @@ a:hover {
 }
 
 .main {
-    padding-top: 100px;
+    text-align: center;
+    padding: 100px .3em 0 .3em;
 }
 
 .break-point-lang {
     padding: 1em 0;
-
     text-align: center;
     background-color: #fafafa;
 
 }
-
 .break-point {
     padding-top: 1em;
-
     text-align: center;
     background-color: #ffffff;
 
@@ -125,7 +123,7 @@ a:hover {
     background: -webkit-linear-gradient(top, #52b4cc 0%, #0088aa 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #52b4cc 0%, #0088aa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#52b4cc', endColorstr='#0088aa', GradientType=0); /* IE6-9 */
-
+    text-align: center;
 }
 
 .cards a {
@@ -133,6 +131,7 @@ a:hover {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
+
 }
 
 .cards a:hover {
@@ -178,37 +177,76 @@ a:hover {
     justify-content: flex-end;
 }
 
+
+
+/**************************************************/
+/***********  testimonial section *****************/
+/**************************************************/
+
 .testimonials .user {
     justify-self: flex-end;
     width: 10%;
     height: 50%;
-
     min-height: 100px;
     align-self: flex-end;
     background: url("../images/user.svg") no-repeat 0 100%;
     background-size: contain;
 }
 
-.testimonials .text-left {
+.testimonials .text {
     padding: .4em;
     width: 50%;
-    min-height: 200px;
-    align-self: flex-start;
-    background: url("../images/talk-bubble.svg") no-repeat 0 0;
-    background-size: contain;
+    margin-bottom: 6em;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #cccccc;
+}
+.speech-bubble {
+    position: relative;
+    background: #cccccc;
+    border-radius: .4em;
 }
 
-.testimonials .text-right {
-    padding: .4em;
-    width: 50%;
-    min-height: 200px;
-    align-self: flex-end;
-    background: url("../images/reply-bubble.svg") no-repeat 0 0;
-    background-size: contain;
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 0;
+    height: 0;
+    border: 1.594em solid transparent;
+    border-top-color: #cccccc;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -0.797em;
+    margin-bottom: -1.594em;
 }
+.speech-bubble-right {
+    position: relative;
+    background: #cccccc;
+    border-radius: .4em;
+}
+
+.speech-bubble-right:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    width: 0;
+    height: 0;
+    border: 1.594em solid transparent;
+    border-top-color: #cccccc;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -0.797em;
+    margin-bottom: -1.594em;
+}
+
 
 /******************************/
 /******** contact form ********/
+/******************************/
 
 .contact-form {
     display: flex;
@@ -330,7 +368,7 @@ footer > ul > li {
 
 @media (max-width: 35em) {
     /* Breakpoint only for mobile */
-    h2 {
+   h2 {
         font-size: 2em;
     }
 
@@ -340,6 +378,33 @@ footer > ul > li {
     }
     .main {
         padding-top: 10px;
+    }
+    .cards {
+        flex-direction: column;
+
+    }
+    .card_text {
+        padding-top: 0;
+    }
+    .portfolio_img {
+        padding-bottom: .5em;
+    }
+    /* text bubbles in testomials */
+    .testimonials h2{
+       padding: 0;
+    }
+    .testimonials .text {
+        width: 80%;
+        margin: 2em 0 4em 0;
+    }
+    .testimonials .user {
+        width: 20%;
+    }
+    .speech-bubble:after {
+        left: 20%;
+    }
+    .speech-bubble-right:after {
+        left: 80%;
     }
 
     #mobileNavbar {
@@ -371,6 +436,9 @@ footer > ul > li {
 
     nav {
         justify-content: center;
+    }
+    footer{
+        visibility: hidden;
     }
 
 
