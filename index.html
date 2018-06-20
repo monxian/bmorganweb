@@ -6,13 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>BmorganWeb</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./js/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="./style/util.css">
 	<link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <div class="header-top-spacer " id="home">
-
         <header
              data-aos="trans-header"
              data-aos-anchor="#trigger-collapse"
@@ -36,6 +40,7 @@
             </nav>
         </header><!-- /header -->
     </div>
+    <div class="page-wrap">
 	<section class="container main" >
         <img src="./images/feature.png" alt="">
         <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -51,21 +56,27 @@
 
 
 	</section>
-    <section class="container offset" id="about">
+    <section class="container offset " id="about">
         <div class="break-point">
             <h2>A little about me.</h2>
             <div class="break-point-lang">
-               <img src="./images/drawing.svg" alt="">
-
+               <img src="./images/bobby.svg" alt="">
+              <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Cum ducimus illum magni sed voluptates. A aliquam doloribus ducimus
+                  incidunt odit provident tenetur totam unde voluptatem. Et incidunt
+                  odit officiis ratione.</span><span>At deleniti deserunt dolorem eveniet
+                  labore obcaecati soluta. Ad aliquam aliquid assumenda debitis delectus
+                  dignissimos dolorum, eligendi hic incidunt ipsum iste iusto magnam minus
+                  pariatur placeat provident ullam ut voluptatibus.</span></p>
 
         </div>
-        <div class="break-point-lang">
+        <div class="break-point" >
             <h2>What do I love to work with?</h2>
             <img  src="./images/languages2.svg" alt="" >
         </div>
 
     </section>
-    <section class="container" id="trigger-collapse">
+    <section class="container"   id="trigger-collapse">
         <div class="break-point">
             <h2>My projects!</h2>
 
@@ -128,31 +139,55 @@
 
     </section>
     <section class="offset" id="contact">
-        <form action="email.php" class="form-container" >
-            <ul class="contact-form">
-                <h2>How to contact me.</h2>
-                <li>
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first-name" id="first-name">
-                </li>
-                <li>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last-name" id="last-name">
-                </li>
-                <li>
-                    <label for="subject">Subject</label>
-                    <textarea name="subject" id="subject" cols="20" rows="10"></textarea>
-                </li>
-                <li>
-                    <button type="submit">Submit</button>
-                </li>
-            </ul>
-        </form>
+        <div class="container-contact100">
+            <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+            <div class="wrap-contact100">
+                <form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Contact Us
+				</span>
+
+                    <div class="wrap-input100 validate-input" data-validate="Name is required">
+                        <input class="input100" type="text" name="name" placeholder="Full Name">
+                        <span class="focus-input100-1"></span>
+                        <span class="focus-input100-2"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                        <input class="input100" type="text" name="email" placeholder="Email">
+                        <span class="focus-input100-1"></span>
+                        <span class="focus-input100-2"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                        <textarea class="input100" name="message" placeholder="Your Message"></textarea>
+                        <span class="focus-input100-1"></span>
+                        <span class="focus-input100-2"></span>
+                    </div>
+
+                    <div class="contact100-form-checkbox">
+                        <input class="input-checkbox100" id="ckb1" type="checkbox" name="copy-mail">
+                        <label class="label-checkbox100" for="ckb1">
+                            Send copy to my-email
+                        </label>
+                    </div>
+
+                    <div class="container-contact100-form-btn">
+                        <button class="contact100-form-btn">
+                            Send Email
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </section>
+    </div><!-- end of page-wrap-->
 	<footer>
         <p>bmorganweb &copy2018</p>
 
     </footer>
+
 
     <!--Mobile fixed bottom nav-->
     <nav id="mobileNavbar">
@@ -163,8 +198,15 @@
         </div>
     </nav>
 
-
+    <!--===============================================================================================-->
+    <script src="./js/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="./js/vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
     <script src="./js/aos/aos.js"></script>
+    <!--===============================================================================================-->
     <script> AOS.init();</script>
+    <!--===============================================================================================-->
+    <script src="./js/contact-form/main.js"></script>
 </body>
 </html>
