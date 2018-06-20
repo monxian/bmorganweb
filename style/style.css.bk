@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+/*
+color palette
+  aqua: #52b4cc
+  aqua hover: #008080
+  footer blackish: #605d5f
+
+*/
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    color: #818181;
+    line-height: 1.5;
+}
+.header-top-spacer{
+    height: 320px;
+}
+
+header {
+    width: 100%;
+    max-width: 960px;
+    position: fixed;
+    z-index: 99;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Poiret One', cursive;
+}
+
+nav .logo {
+    width: 300px;
+    height: 300px;
+    padding: .5em;
+    background: url("../images/flatphone.svg") no-repeat;
+    background-size: contain;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-start;
+    list-style: none;
+    padding: 1em;
+}
+
+nav > ul > li {
+    font-size: 1.5em;
+    margin: 0 15px;
+}
+
+nav > ul > li > a {
+    cursor: pointer;
+    color: #52b4cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav > ul > li > a:hover {
+    text-decoration: underline;
+    color: #008080;
+    font-weight: bold;
+
+}
+
+/*********************************************/
+/*********** collapse nav on scroll **********/
+
+[data-aos="collapse-header"] {
+    background: white;
+}
+
+[data-aos="collapse-header"].aos-animate {
+    background: black;
+    height: 70px;
+   }
+
+[data-aos="logo-shrink-rule"] {
+    height: 300px;
+    -webkit-transition: height;
+    -moz-transition: height;
+    -ms-transition: height;
+    -o-transition: height;
+    transition: height;
+}
+
+[data-aos="logo-shrink-rule"].aos-animate {
+    width: 70px;
+    max-height: 70px;
+    background-size: contain;
+}
+
+/*********** collapse nav on scroll **********/
+/*********************************************/
+
+.container {
+    min-height: 500px;
+    padding: .2em;
+    width: 100%;
+}
+
+.work {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cards {
+    border: 1px gray solid;
+
+}
+.cards h4{
+    text-align: center;
+    color: #52b4cc;
+}
+
+.testimonials {
+    align-self: center;
+    border: 1px orange dashed;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+footer {
+    min-height: 100px;
+    color: white;
+    background: #605d5f;
+}
