@@ -434,6 +434,7 @@ footer > ul > li {
         bottom: 0;
         width: 100%;
         background: #605d5f;
+        z-index: 99;
 
     }
 
@@ -460,6 +461,11 @@ footer > ul > li {
     }
     footer{
         visibility: hidden;
+    }
+
+    /* keeps mobile keyboard from moving bottom nav up */
+    .fixfixed #mobileNavbar {
+        position: absolute;
     }
 
 
@@ -509,9 +515,8 @@ iframe {
 
 
 
-
-/*//////////////////////////////////////////////////////////////////
-[ Contact ]*/
+/*************************************/
+/***********  contact form ***********/
 
 .container-contact100 {
     width: 100%;

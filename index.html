@@ -56,8 +56,8 @@
 
 
 	</section>
-    <section class="container offset " id="about">
-        <div class="break-point">
+    <section class="container offset" id="about">
+        <div class="break-point" id="trigger-collapse">
             <h2>A little about me.</h2>
             <div class="break-point-lang">
                <img src="./images/bobby.svg" alt="">
@@ -70,13 +70,13 @@
                   pariatur placeat provident ullam ut voluptatibus.</span></p>
 
         </div>
-        <div class="break-point" >
+        <div class="break-point"  >
             <h2>What do I love to work with?</h2>
             <img  src="./images/languages2.svg" alt="" >
         </div>
 
     </section>
-    <section class="container"   id="trigger-collapse">
+    <section class="container" >
         <div class="break-point">
             <h2>My projects!</h2>
 
@@ -143,9 +143,9 @@
             <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
 
             <div class="wrap-contact100">
-                <form class="contact100-form validate-form">
+                <form class="contact100-form validate-form" action="emailer.php" method="post">
 				<span class="contact100-form-title">
-					Contact Us
+					Contact Me
 				</span>
 
                     <div class="wrap-input100 validate-input" data-validate="Name is required">
@@ -200,13 +200,16 @@
 
     <!--===============================================================================================-->
     <script src="./js/vendor/jquery/jquery-3.2.1.min.js"></script>
-    <!--===============================================================================================-->
+
+    <script src="./js/mobileKeyboardFix.js"></script>
+
     <script src="./js/vendor/animsition/js/animsition.min.js"></script>
-    <!--===============================================================================================-->
+
     <script src="./js/aos/aos.js"></script>
-    <!--===============================================================================================-->
+
     <script> AOS.init();</script>
-    <!--===============================================================================================-->
+
     <script src="./js/contact-form/main.js"></script>
+    <!--===============================================================================================-->
 </body>
 </html>
