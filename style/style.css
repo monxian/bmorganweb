@@ -535,14 +535,7 @@ iframe {
     z-index: 1;
 }
 
-.contact100-map {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
+
 
 .wrap-contact100 {
     width: 500px;
@@ -551,11 +544,11 @@ iframe {
     overflow: hidden;
     padding: 62px 55px 65px 55px;
 
-    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-    -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
-    -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.4);
+    -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.4);
+    -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -565,15 +558,26 @@ iframe {
 .contact100-form {
     width: 100%;
 }
-
+#form-messages{
+    display: none;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.error{
+    color: red;
+}
+.success {
+    color: green;
+}
 .contact100-form-title {
     display: block;
-    font-family: JosefinSans-Bold;
-    font-size: 30px;
-    color: #333333;
+    font-family: 'Poiret One', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #818181;
     line-height: 1.2;
     text-align: left;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 /*------------------------------------------------------------------
@@ -723,7 +727,7 @@ textarea.input100 {
     position: relative;
     padding-left: 32px;
     cursor: pointer;
-    font-family: Oswald-Medium;
+    /*font-family: Oswald-Medium;*/
     font-size: 15px;
     color: #52b4cc;
     line-height: 1.2;
@@ -786,7 +790,7 @@ textarea.input100 {
     height: 42px;
     background-color: #52b4cc;
 
-    font-family: JosefinSans-Bold;
+    /*font-family: JosefinSans-Bold;*/
     font-size: 14px;
     color: #fff;
     line-height: 1.2;
