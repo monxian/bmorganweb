@@ -37,7 +37,7 @@ h4 {
 body {
    width: 100%;
     margin: 0 auto;
-
+    font-family: Arial, Helvetica, sans-serif;
     color: #818181;
     line-height: 1.5;
 }
@@ -235,7 +235,7 @@ a:hover {
     border-bottom: 0;
     border-left: 0;
     margin-left: -0.797em;
-    margin-bottom: -1.594em;
+    margin-bottom: -1.5em;
 }
 .speech-bubble-right {
     position: relative;
@@ -255,7 +255,7 @@ a:hover {
     border-bottom: 0;
     border-right: 0;
     margin-left: -0.797em;
-    margin-bottom: -1.594em;
+    margin-bottom: -1.5em;
 }
 
 
@@ -855,13 +855,12 @@ textarea.input100 {
 /************************ FOOTER SECTION ***********************/
 
 footer {
-    font-family: 'Poiret One', cursive;
     font-size: 1.5em;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 75px;
-    color: white;
+    color: #C0B9AD;
     background: #605d5f;
 }
 
@@ -876,6 +875,15 @@ footer > ul {
 footer > ul > li {
 
     margin-left: 15px;
+}
+footer .footer-left{
+     font-family: 'Poiret One', cursive;
+}
+footer .footer-right{
+     font-family: Arial, Helvetica, sans-serif;
+}
+footer .footer-right p{
+    font-size: .5em;
 }
 
 #mobileNavbar {
