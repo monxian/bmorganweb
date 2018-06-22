@@ -470,10 +470,10 @@ textarea:-ms-input-placeholder { color: #999999;}
 button {
     outline: none !important;
     border: none;
-    background: transparent;
 }
 
 button:hover {
+
     cursor: pointer;
 }
 
@@ -770,7 +770,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-    background-color: #008080;
+    background-color:  #818181;
 }
 
 /*------------------------------------------------------------------
