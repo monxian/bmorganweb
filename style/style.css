@@ -208,7 +208,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0px 1em;
+    padding: 0px 1em 1em 1em;
+    background: #f7f7f7;
 }
 
 .testimonials h2 {
@@ -434,7 +435,7 @@ footer .footer-right p{
     .main {
         padding-top: 10px;
     }
-    
+
     /* image in the what i love to work on seciton */
     .lang-img{
         width: 90%;
