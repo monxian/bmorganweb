@@ -10,6 +10,11 @@
     src: url('../fonts/JosefinSans/JosefinSans-Bold.ttf');
 }
 
+@font-face {
+    font-family: Oswald-Medium;
+    src: url('../fonts/oswald/Oswald-Medium.ttf');
+}
+
 /*
 color palette
   aqua: #52b4cc
@@ -26,13 +31,7 @@ h1 {
 }
 
 h2 {
-    padding: .5em;
     font-size: 2.5em;
-    text-align: center;
-}
-h3 {
-    padding: .5em;
-    font-size: 2em;
     text-align: center;
 }
 
@@ -43,7 +42,7 @@ h4 {
 body {
    width: 100%;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+
     color: #818181;
     line-height: 1.5;
 }
@@ -112,46 +111,27 @@ a:hover {
 
 .container {
     min-height: 300px;
+
+
 }
 
 .main {
     text-align: center;
     padding: 100px .3em 0 .3em;
-
 }
-.profile {
-    margin: 0 auto;  
-    width: 100%;
+
+.break-point-lang {
+    padding: 1em 0;
     text-align: center;
-    background: #f7f7f7;
-    padding-bottom: 1em;
+    background-color: #fafafa;
 
 }
-.profile p{
-    margin: 0 15%;
-    padding: .4em 0;
-   
-}
-.profile-img{
-    width: 25%;
-   
-}
-
-.profile-tools{
+.break-point {
     padding-top: 1em;
     text-align: center;
- }
+    background-color: #ffffff;
 
-/*********************************************************************/
-/**************************languages section *************************/
-
-.lang-img{
-    width: 75%;
 }
-
-
-
-
 
 .cards {
     display: flex;
@@ -199,16 +179,11 @@ a:hover {
     color: #52b4cc;
 }
 
-
-/**************************************************/
-/***********  testimonial section *****************/
-/**************************************************/
-
 .testimonials {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 0px 1em;
+    padding: 1em;
 }
 
 .testimonials h2 {
@@ -222,6 +197,12 @@ a:hover {
 .just-right {
     justify-content: flex-end;
 }
+
+
+
+/**************************************************/
+/***********  testimonial section *****************/
+/**************************************************/
 
 .testimonials .user {
     width: 10%;
@@ -259,7 +240,7 @@ a:hover {
     border-bottom: 0;
     border-left: 0;
     margin-left: -0.797em;
-    margin-bottom: -1.5em;
+    margin-bottom: -1.594em;
 }
 .speech-bubble-right {
     position: relative;
@@ -279,7 +260,7 @@ a:hover {
     border-bottom: 0;
     border-right: 0;
     margin-left: -0.797em;
-    margin-bottom: -1.5em;
+    margin-bottom: -1.594em;
 }
 
 
@@ -336,17 +317,14 @@ textarea {
 /******** contact form ********/
 /******************************/
 
-
-/***************************************************************/
-/************************ FOOTER SECTION ***********************/
-
 footer {
+    font-family: 'Poiret One', cursive;
     font-size: 1.5em;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 75px;
-    color: #C0B9AD;
+    color: white;
     background: #605d5f;
 }
 
@@ -362,21 +340,10 @@ footer > ul > li {
 
     margin-left: 15px;
 }
-footer .footer-left{
-     font-family: 'Poiret One', cursive;
-}
-footer .footer-right{
-     font-family: Arial, Helvetica, sans-serif;
-}
-footer .footer-right p{
-    font-size: .5em;
-}
 
 #mobileNavbar {
     display: none;
 }
-
-
 
 @media (min-width: 35em) {
     /* Breakpoint for the aos nav. Changes for wider screen */
@@ -416,7 +383,6 @@ footer .footer-right p{
         height: 70px;      /* Give height of your fixed element */
         margin-top:  -70px; /* Give negative margin of your fixed element */
         visibility: hidden;
-
     }
 
 }
@@ -434,11 +400,6 @@ footer .footer-right p{
     .main {
         padding-top: 10px;
     }
-    
-    /* image in the what i love to work on seciton */
-    .lang-img{
-        width: 90%;
-    }
     .cards {
         flex-direction: column;
 
@@ -446,19 +407,10 @@ footer .footer-right p{
     .card_text {
         padding-top: 0;
     }
-    .profile {
-        padding-top: 0px;
-    }
-    .profile-img{
-        width: 50%;
-    }
     .portfolio_img {
         padding-bottom: .5em;
     }
     /* text bubbles in testomials */
-    .testimonials{
-        background-color: #f7f7f7;
-    }
     .testimonials h2{
        padding: 0;
     }
@@ -483,6 +435,7 @@ footer .footer-right p{
         width: 100%;
         background: #605d5f;
         z-index: 99;
+
     }
 
     .mobile-menu {
@@ -507,9 +460,7 @@ footer .footer-right p{
         justify-content: center;
     }
     footer{
-        height: 50px;
         visibility: hidden;
-        overflow: hidden;
     }
 
     /* keeps mobile keyboard from moving bottom nav up */
@@ -551,10 +502,10 @@ textarea:-ms-input-placeholder { color: #999999;}
 button {
     outline: none !important;
     border: none;
+    background: transparent;
 }
 
 button:hover {
-
     cursor: pointer;
 }
 
@@ -776,6 +727,7 @@ textarea.input100 {
     position: relative;
     padding-left: 32px;
     cursor: pointer;
+    /*font-family: Oswald-Medium;*/
     font-size: 15px;
     color: #52b4cc;
     line-height: 1.2;
@@ -838,6 +790,7 @@ textarea.input100 {
     height: 42px;
     background-color: #52b4cc;
 
+    /*font-family: JosefinSans-Bold;*/
     font-size: 14px;
     color: #fff;
     line-height: 1.2;
@@ -851,7 +804,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover {
-    background-color:  #818181;
+    background-color: #008080;
 }
 
 /*------------------------------------------------------------------
@@ -859,7 +812,7 @@ textarea.input100 {
 
 @media (max-width: 576px) {
     .wrap-contact100 {
-        padding: 40px 15px 65px 15px;
+        padding: 62px 15px 65px 15px;
     }
 }
 
@@ -930,6 +883,3 @@ textarea.input100 {
         opacity: 1;
     }
 }
-
-
-
